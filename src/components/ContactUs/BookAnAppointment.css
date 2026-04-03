@@ -1,0 +1,180 @@
+.book-section {
+  padding: 3rem 1.2rem;
+  background: #f8fafc;
+}
+
+.book-box {
+  background: #c4dbf5;
+  border-radius: 1.2rem;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.book-content h2 {
+  font-size: clamp(1.4rem, 5vw, 2rem);
+  font-weight: 600;
+  color: #1f2d3d;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.book-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.book-action iframe {
+  width: 180px;
+  height: 180px;
+  border: none;
+}
+
+.book-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d5b96;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(63, 81, 181, 0.3);
+  white-space: nowrap;
+}
+
+.book-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(63, 81, 181, 0.4);
+}
+
+.book-btn:active {
+  transform: translateY(0);
+}
+
+.book-contact-bar {
+  margin-top: 2.5rem;
+  background: #cfd5e3;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.book-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1rem;
+  color: #1f2d3d;
+}
+
+.book-contact-icon {
+  color: #0d5b96;
+  font-size: 1.1rem;
+}
+
+@media (min-width: 768px) {
+  .book-box {
+    padding: 3rem;
+  }
+
+  .book-action iframe {
+    width: 220px;
+    height: 220px;
+  }
+
+  .book-btn {
+    font-size: 1.05rem;
+    padding: 1.1rem 2.5rem;
+  }
+
+  .book-contact-bar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .book-box {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    padding: 3.5rem 4rem;
+  }
+
+  .book-content {
+    max-width: 55%;
+  }
+
+  .book-action {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .book-action iframe {
+    width: 250px;
+    height: 250px;
+  }
+
+  .book-btn {
+    font-size: 1.1rem;
+    padding: 1.2rem 2.8rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .book-box {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .book-action iframe {
+    width: 280px;
+    height: 280px;
+  }
+}
+
+@media (min-width: 1900px) {
+  .book-box {
+    max-width: 1600px;
+    padding: 4rem 5rem;
+  }
+
+  .book-content h2 {
+    font-size: 2.4rem;
+  }
+
+  .book-action iframe {
+    width: 320px;
+    height: 320px;
+  }
+
+  .book-btn {
+    font-size: 1.2rem;
+    padding: 1.4rem 3.2rem;
+  }
+
+  .book-contact-bar {
+    max-width: 1400px;
+    margin: 3rem auto 0;
+    padding: 1.5rem 3rem;
+  }
+
+  .book-contact-item {
+    font-size: 1.1rem;
+  }
+}

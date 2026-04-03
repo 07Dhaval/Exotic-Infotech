@@ -1,0 +1,63 @@
+.industry-list-section {
+  padding: 100px 5%;
+  background: #f8fafc;
+}
+
+.industry-list-heading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  background: #0d5b96;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.industry-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.industry-card-link {
+  text-decoration: none;
+}
+
+.industry-card {
+  position: relative;
+  height: 240px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(13, 91, 150, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.industry-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 25px rgba(13, 91, 150, 0.3);
+}
+
+.industry-list-card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+.industry-list-card-overlay h3 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.industry-list-card-overlay p {
+  margin: 6px 0 0;
+  font-size: 14px;
+  opacity: 0.9;
+}

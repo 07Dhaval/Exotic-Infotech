@@ -1,0 +1,147 @@
+.build-section {
+  padding: 100px 20px;
+  background: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+.build-container {
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+  padding: 0 15px;
+}
+
+.build-heading {
+  font-size: clamp(28px, 5vw, 60px);
+  font-weight: 700;
+  margin-bottom: 60px;
+  background: #0d5b96;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.build-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 60px;
+}
+
+.build-gridd {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 0 auto 60px auto;
+  max-width: 1000px;
+}
+
+.build-card {
+  background: #ffffff;
+  padding: 45px 30px;
+  border-radius: 22px;
+  width: 300px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.build-card svg {
+color: #0d5b96;
+  margin-bottom: 18px;
+}
+
+.build-card h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0f172a;
+}
+
+.build-card p {
+  font-size: 14px;
+  color: #0d5b96;
+  line-height: 1.6;
+}
+
+.build-card:hover {
+  transform: translateY(-8px);
+  background: #ffffff;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+}
+
+.build-cta {
+  margin-top: 30px;
+}
+
+.cta-button {
+  padding: 16px 45px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 60px;
+  border: none;
+  cursor: pointer;
+  background: #0d5b96;
+  color: white;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(13, 91, 150, 0.35);
+}
+
+@media (max-width: 1200px) {
+  .build-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .build-gridd {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .build-section {
+    padding: 80px 20px;
+  }
+
+  .build-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .build-grid,
+  .build-gridd {
+    grid-template-columns: 1fr;
+  }
+
+  .build-heading {
+    margin-bottom: 40px;
+  }
+
+  .build-card {
+    padding: 30px 20px;
+  }
+
+  .cta-button {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .build-section {
+    padding: 60px 15px;
+  }
+
+  .build-card h4 {
+    font-size: 18px;
+  }
+
+  .build-card p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,158 @@
+.service-section {
+  background: #ffffff;
+  padding: 60px 16px;
+}
+
+.service-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.service-left {
+  width: 100%;
+}
+
+.service-left .small-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #0d5b96;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.service-left h2 {
+  font-size: 32px;
+  margin: 15px 0;
+  background: #0d5b96;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-left p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 40px;
+  background: #0d5b96;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.25);
+}
+
+.service-right {
+  width: 100%;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.service-card {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(14, 165, 233, 0.15);
+}
+
+.service-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  background: #0d5b96;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+@media (min-width: 576px) {
+
+  .service-section {
+    padding: 70px 20px;
+  }
+
+  .service-left h2 {
+    font-size: 40px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .service-card img {
+    width: 120px;
+  }
+}
+
+@media (min-width: 992px) {
+
+  .service-section {
+    padding: 100px 5%;
+  }
+
+  .service-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+  }
+
+  .service-left {
+    flex: 0 0 30%;
+    position: sticky;
+    top: 100px;
+  }
+
+  .service-right {
+    flex: 0 0 70%;
+  }
+
+  .service-left h2 {
+    font-size: 60px;
+  }
+
+  .btn-primary {
+    padding: 18px 50px;
+    font-size: 18px;
+  }
+
+  .service-card {
+    padding: 30px;
+  }
+
+  .service-card img {
+    width: 150px;
+  }
+}

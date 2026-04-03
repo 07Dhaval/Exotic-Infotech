@@ -1,0 +1,88 @@
+.tech-section {
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #0d5b96;
+}
+
+.tech-container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.tech-header h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.tech-intro p {
+  max-width: 850px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 12px;
+}
+
+.philosophy-title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.philosophy-card {
+  background: #c4dbf5;
+  padding: 30px 20px;
+  border-radius: 14px;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #0d5b96;
+}
+
+.philosophy-icon {
+  font-size: 28px;
+  color: #0d5b96;
+  margin-bottom: 15px;
+}
+
+.philosophy-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.philosophy-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.tech-footer {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  color: #0d5b96;
+}
+
+@media (max-width: 768px) {
+  .tech-header h2 {
+    font-size: 30px;
+  }
+
+  .philosophy-title {
+    font-size: 22px;
+  }
+}

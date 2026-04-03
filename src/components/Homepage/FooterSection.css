@@ -1,0 +1,62 @@
+.footerbar {
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(14,165,233,0.15),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(132,204,22,0.12),
+      transparent 40%
+    ),
+    linear-gradient(135deg, #09172c, #0e1f3d);
+  color: #cbd5e1;
+  padding: 12px 40px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.flag {
+  width: 18px;
+  height: 12px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.separator {
+  width: 1px;
+  height: 18px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mail-icon {
+  font-size: 14px;
+  color: #f4c542; 
+}
+
+@media (max-width: 992px) {
+  .topbar-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .separator {
+    display: none;
+  }
+}

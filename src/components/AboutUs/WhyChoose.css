@@ -1,0 +1,141 @@
+.why-section {
+  padding: 50px 20px;
+  background: #0d5b96;
+}
+
+.why-container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.why-title {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 800;
+  color: #f4f6f9;
+}
+
+.why-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: -100px;
+  margin-top: -50px;
+  height: 700px;
+}
+
+.why-image {
+  display: flex;
+  justify-content: center;
+}
+
+.why-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 18px;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.why-image img:hover {
+  transform: translateY(-8px);
+}
+
+.why-points {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.why-item {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.check-icon {
+  min-width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d5b96;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.why-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #ffffff;
+}
+
+.why-text p {
+  font-size: 16px;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .why-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 50px;
+
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .why-image img {
+    max-width: 420px;
+  }
+
+  .why-item {
+    justify-content: center;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-section {
+    padding: 70px 16px;
+  }
+
+  .why-title {
+    margin-bottom: 40px;
+  }
+
+  .why-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .check-icon {
+    margin-bottom: 10px;
+  }
+
+  .why-text p {
+    font-size: 15px;
+  }
+
+  .why-image img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-title {
+    font-size: 26px;
+  }
+
+  .why-points {
+    gap: 24px;
+  }
+}

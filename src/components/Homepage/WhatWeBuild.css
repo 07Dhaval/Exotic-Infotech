@@ -1,0 +1,166 @@
+.wwb-section {
+  padding: 120px 20px;
+  background: #f8fafc;
+  font-family: "Poppins", sans-serif;
+}
+
+.wwb-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.wwb-left {
+  position: sticky;
+  top: 120px;
+  align-self: start;
+}
+
+.wwb-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: #0d5b96;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.wwb-description {
+  font-size: 18px;
+  color: #0d5b96;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  max-width: 480px;
+}
+
+.build-ctaa {
+  margin-top: 30px;
+}
+
+.cta-buttonn {
+  display: inline-block;
+  padding: 18px 40px;
+  background: #0d5b96;
+  color: #ffffff;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  transition: 0.3s ease;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.cta-buttonn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px #0d5b96;
+}
+
+.wwb-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.wwb-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.wwb-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px #0d5b96;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.wwb-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px #0d5b96;
+}
+
+.wwb-icon {
+  color: #0d5b96;
+  margin-bottom: 20px;
+}
+
+.wwb-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0d5b96;
+  margin-bottom: 12px;
+}
+
+.wwb-card-desc {
+  font-size: 15px;
+  color: #0d5b96;
+  line-height: 1.6;
+}
+
+.wwb-load-more {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #0d5b96;
+  transition: 0.3s;
+}
+
+.wwb-card:hover .wwb-load-more {
+  transform: translateX(6px);
+}
+
+@media (max-width: 992px) {
+  .wwb-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .wwb-left {
+    position: relative;
+    top: unset;
+    text-align: center;
+  }
+
+  .wwb-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .wwb-section {
+    padding: 90px 20px;
+  }
+
+  .wwb-title {
+    font-size: 34px;
+  }
+
+  .wwb-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wwb-card {
+    padding: 28px;
+  }
+
+  .cta-buttonn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .wwb-title {
+    font-size: 28px;
+  }
+
+  .wwb-description {
+    font-size: 14px;
+  }
+}
