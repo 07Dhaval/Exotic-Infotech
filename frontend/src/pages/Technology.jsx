@@ -1,17 +1,18 @@
 import ContactSection from "../components/Letsconnect/ContactSection";
-import ApiSystemIntegrationSection from "../components/Technologies/ApiSystemIntegrationSection";
-import TechnologiesSection from "../components/Technologies/TechnologiesSection";
+import CoreDevelopmentTechnologies from "../components/Technologies/CoreDevelopmentTechnologies";
+import ModernTechSection from "../components/Technologies/ModernTechSection";
+// import TechnologiesSection from "../components/Technologies/TechnologiesSection";
 import TechnologyExpertise from "../components/Technologies/TechnologyExpertise";
-import TechnologyStack from "../components/Technologies/TechnologyStack";
 import TechStrategySection from "../components/Technologies/TechStrategySection";
 
 function Technology() {
   return (
     <div style={{}}>
-      <TechnologiesSection />
+      {/* <TechnologiesSection /> */}
       <TechnologyExpertise />
-      <TechnologyStack />
-      <ApiSystemIntegrationSection />
+      <CoreDevelopmentTechnologies />
+
+      <ModernTechSection />
       <TechStrategySection />
       <ContactSection />
     </div>

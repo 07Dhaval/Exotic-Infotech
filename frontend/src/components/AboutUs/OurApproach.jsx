@@ -12,23 +12,23 @@ import {
 const features = [
   {
     icon: <FaProjectDiagram />,
-    title: "Agile methodology",
+    title: "Agile Methodology",
   },
   {
     icon: <FaCode />,
-    title: "Industry-standard coding practices",
+    title: "Industry-Standard Coding Practices",
   },
   {
     icon: <FaCheckCircle />,
-    title: "Quality assurance integrated into every phase",
+    title: "Quality Assurance in Every Phase",
   },
   {
     icon: <FaLayerGroup />,
-    title: "Scalable architecture for future growth",
+    title: "Scalable Architecture for Growth",
   },
   {
     icon: <FaTools />,
-    title: "Ongoing support and maintenance",
+    title: "Ongoing Support & Maintenance",
   },
   {
     icon: <FaShieldAlt />,
@@ -40,19 +40,21 @@ export default function OurApproach() {
   return (
     <section className="approach-section">
       <div className="approach-container">
-        <h2 className="title">Our Approach</h2>
+        <h2 className="approach-title">Our Approach</h2>
 
-        <p className="description">
-          At Exotic Infotech Global, we believe in a consultative approach. Our
-          process begins by understanding your business needs, defining the
-          technical roadmap, and delivering robust solutions tailored to your
-          requirements. We emphasize transparency, collaboration, and continuous
-          improvement.
+        <p className="approach-description">
+          At Exotic Infotech Global, we follow a consultative and structured
+          development process. We analyze business goals, define a clear
+          technical roadmap, and deliver scalable solutions with transparency,
+          collaboration, and continuous improvement.
         </p>
 
-        <div className="cards-grid">
+        <div className="approach-grid">
           {features.map((item, index) => (
-            <div key={index} className="card">
+            <div key={index} className="approach-card">
+              <div className="approach-icon">
+                {item.icon}
+              </div>
               <h3>{item.title}</h3>
             </div>
           ))}

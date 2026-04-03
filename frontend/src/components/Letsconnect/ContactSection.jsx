@@ -15,6 +15,7 @@ const ContactSection = () => {
       <div className="contact-container">
         <div className="contact-left">
           <h2>Get In Touch</h2>
+
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
@@ -25,7 +26,7 @@ const ContactSection = () => {
               <div className="icon-box">
                 <FaPhoneAlt />
               </div>
-              <div>
+              <div className="contact-text">
                 <h4>Phone</h4>
                 <span>+91-8511624907</span>
               </div>
@@ -35,11 +36,12 @@ const ContactSection = () => {
               <div className="icon-box">
                 <FaEnvelope />
               </div>
-              <div>
+              <div className="contact-text">
                 <h4>Email</h4>
                 <span>
-                  Info@exoticinfotech.com
-                  <br></br>riddhi.rana@exoticinfotech.com
+                  info@exoticinfotech.com
+                  <br />
+                  riddhi.rana@exoticinfotech.com
                 </span>
               </div>
             </div>
@@ -48,11 +50,12 @@ const ContactSection = () => {
               <div className="icon-box">
                 <FaMapMarkerAlt />
               </div>
-              <div>
+              <div className="contact-text">
                 <h4>Address</h4>
                 <span>
-                  B-315, Alpha Arcades, Near Mipco Chowkdi, GIDC,
-                  <br></br> Bharuch, Gujarat 392001
+                  B-315, Alpha Arcades, Near Mipco Chowkdi, GIDC
+                  <br />
+                  Bharuch, Gujarat 392001
                 </span>
               </div>
             </div>
@@ -106,9 +109,9 @@ const ContactSection = () => {
 
             <input type="text" placeholder="Phone" />
 
-            <textarea rows="13" placeholder="Message"></textarea>
+            <textarea rows="8" placeholder="Message"></textarea>
 
-            <button type="submit">SUBMIT BUTTON</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </div>

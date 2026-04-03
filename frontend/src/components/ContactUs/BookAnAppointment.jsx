@@ -3,13 +3,6 @@ import "./BookAnAppointment.css";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
 export default function BookAnAppointment() {
-  const phoneNumber = "918511624907";
-  const message = "Hello! I would like to know more about your services.";
-
-  const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message,
-  )}`;
-
   return (
     <div className="book-section">
       <div className="book-box">
@@ -25,7 +18,7 @@ export default function BookAnAppointment() {
           ></iframe>
 
           <a
-            href={whatsappLink}
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=riddhi.rana@exoticinfotech.com&su=Project%20Discussion&body=Hi%2C%20I%20would%20like%20to%20discuss%20my%20project."
             target="_blank"
             rel="noopener noreferrer"
             className="book-btn"
@@ -34,18 +27,6 @@ export default function BookAnAppointment() {
           </a>
         </div>
       </div>
-
-      {/* <div className="book-contact-bar">
-        <div className="book-contact-item">
-          <FaEnvelope className="book-contact-icon" />
-          <span>Info@exoticinfotech.com</span>
-        </div>
-
-        <div className="book-contact-item">
-          <FaPhoneAlt className="book-contact-icon" />
-          <span>+91 8511624907</span>
-        </div>
-      </div> */}
     </div>
   );
 }

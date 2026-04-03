@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutHero.css";
-import { FaStar } from "react-icons/fa";
-import image from "../../assets/exoticphotos/company2.png";
+import image from "../../assets/exoticphotos/company2.gif";
 
 const AboutHero = () => {
   return (
@@ -10,8 +9,7 @@ const AboutHero = () => {
         <div className="about-left">
           <h1 className="about-title">
             Building Scalable Digital Solutions
-            <br />
-            with Agility and Excellence
+            <span> with Excellence</span>
           </h1>
 
           <p className="about-description">
@@ -28,7 +26,6 @@ const AboutHero = () => {
 
           <button className="about-btn">
             View Portfolio
-            <span className="gear">⚙</span>
           </button>
         </div>
 

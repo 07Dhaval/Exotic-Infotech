@@ -1,12 +1,95 @@
 .problem-section {
-  padding: 120px 40px;
+  position: relative;
+  overflow: hidden;
   background: #f8fafc;
+  padding: 60px 0;
   font-family: "Poppins", sans-serif;
+}
+
+.company-marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 12px 0;
+  position: relative;
+}
+
+.company-marquee::before,
+.company-marquee::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.company-marquee::before {
+  left: 0;
+  background: linear-gradient(to right, #f8fafc, transparent);
+}
+
+.company-marquee::after {
+  right: 0;
+  background: linear-gradient(to left, #f8fafc, transparent);
+}
+
+.marquee-track {
+  display: flex;
+  gap: 70px;
+  width: max-content;
+}
+
+.company-marquee.left .marquee-track {
+  animation: scroll-left 45s linear infinite;
+}
+
+.company-marquee.right .marquee-track {
+  animation: scroll-right 45s linear infinite;
+}
+
+.marquee-text {
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  color: transparent;
+  -webkit-text-stroke: 1.5px #0d5b96;
+  opacity: 0.35;
+
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.marquee-text:hover {
+  color: #0d5b96;
+  -webkit-text-stroke: 0;
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
 }
 
 .problem-container {
   max-width: 1300px;
-  margin: auto;
+  margin: 50px auto;
   text-align: center;
 }
 
@@ -14,10 +97,11 @@
   font-size: 56px;
   font-weight: 700;
   margin-bottom: 30px;
-  background: #0d5b96;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   line-height: 1.2;
+  color: #0d5b96;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .problem-points {
@@ -58,7 +142,7 @@
   padding: 45px 30px;
   border-radius: 22px;
   width: 280px;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 10px #0d5b96;
   transition: all 0.3s ease;
 }
 
@@ -128,7 +212,7 @@
 
 @media (max-width: 768px) {
   .problem-section {
-    padding: 90px 20px;
+    padding: 40px 20px;
   }
 
   .problem-heading {
@@ -159,6 +243,14 @@
 
   .flow-card p {
     font-size: 13px;
+  }
+
+  .marquee-text {
+    font-size: 18px;
+  }
+
+  .marquee-track {
+    gap: 40px;
   }
 }
 

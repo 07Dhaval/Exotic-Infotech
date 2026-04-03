@@ -1,389 +1,407 @@
-const services = [
+import Custom from "../assets/Services/Custom2.gif";
+import Saas from "../assets/Services/Saas.gif";
+import Web from "../assets/Services/Web.gif";
+import Mobile from "../assets/Services/Mobile.gif";
+import Digital from "../assets/Services/Digital.gif";
+import API from "../assets/Services/API.gif";
+const servicesData = [
   {
-    slug: "laravel",
-    themeColor: "#FF2D20",
-    hero: {
-      tagline: "Elegant PHP Framework",
-      title: "Laravel Development",
-      description: "Build modern, scalable web applications with Laravel.",
-      image: "https://laravel.com/img/logomark.min.svg",
-    },
-    benefits: [
-      { title: "Rapid Development", description: "Fast and efficient coding." },
-      { title: "Secure", description: "Built-in security features." },
-      { title: "Scalable", description: "Handles growing applications." },
-    ],
-    offerings: [
-      "Web Applications",
-      "API Development",
-      "E-commerce Platforms",
-      "CMS",
-    ],
-    techStack: ["Laravel", "PHP", "MySQL", "Composer"],
-  },
-  {
-    slug: "java",
-    themeColor: "#f89820",
-    hero: {
-      tagline: "Enterprise Solutions",
-      title: "Java Development",
-      description:
-        "Build robust, scalable enterprise applications with Java technologies.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-    },
-    benefits: [
+    slug: "custom-business-software",
+    title: "Custom Business Software",
+    shortDesc: "Tailored systems built for operations and growth.",
+    description:
+      "We design and develop custom software solutions tailored specifically to your business processes. Our systems help automate workflows, improve efficiency, and scale operations as your company grows.",
+
+    heroImage: Custom,
+
+    features: [
       {
-        title: "Enterprise Ready",
-        description: "Scalable for large-scale systems.",
+        title: "Enterprise Software Development",
+        desc: "Robust enterprise applications designed to support complex business processes.",
       },
-      { title: "Secure", description: "Advanced security features." },
-      { title: "Cross-Platform", description: "Runs on any platform." },
+      {
+        title: "Workflow Automation",
+        desc: "Automate repetitive tasks and streamline operations to improve productivity.",
+      },
+      {
+        title: "CRM & ERP Customization",
+        desc: "Custom CRM and ERP systems tailored to your company’s needs.",
+      },
+      {
+        title: "Secure & Scalable Architecture",
+        desc: "Future-ready software systems built with modern technologies.",
+      },
     ],
-    offerings: [
-      "Spring Boot Apps",
-      "Microservices",
-      "API Development",
-      "Legacy Migration",
+
+    process: [
+      "Business Requirement Analysis",
+      "System Architecture Design",
+      "Development & Integration",
+      "Testing & Quality Assurance",
+      "Deployment & Support",
     ],
-    techStack: ["Java", "Spring", "Hibernate", "Maven"],
-  },
-  {
-    slug: "php",
-    themeColor: "#777bb4",
-    hero: {
-      tagline: "Dynamic Web Solutions",
-      title: "PHP Development",
-      description: "Create dynamic websites and applications with PHP.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-    },
+
     benefits: [
-      { title: "Cost-Effective", description: "Affordable development." },
-      { title: "Flexible", description: "Easy to integrate." },
-      { title: "Fast", description: "Quick execution." },
+      "Improved operational efficiency",
+      "Automated business processes",
+      "Better data management",
+      "Scalable digital infrastructure",
     ],
-    offerings: [
-      "Custom PHP Apps",
-      "CMS Development",
-      "E-commerce Sites",
-      "API Integration",
+
+    faqs: [
+      {
+        q: "What is custom business software?",
+        a: "Custom business software is developed specifically for your company's unique workflows and operational needs.",
+      },
+      {
+        q: "How is custom software different from off-the-shelf software?",
+        a: "Off-the-shelf software serves general needs, while custom software is built specifically for your processes, improving efficiency and scalability.",
+      },
+      {
+        q: "How long does custom software development take?",
+        a: "Depending on complexity, most custom software projects take between 6–16 weeks.",
+      },
+      {
+        q: "Can existing systems be integrated with custom software?",
+        a: "Yes, we can integrate custom systems with your existing CRM, ERP, payment gateways, and third-party platforms.",
+      },
+      {
+        q: "Is custom software scalable?",
+        a: "Yes, we design software architectures that allow your system to grow as your business expands.",
+      },
     ],
-    techStack: ["PHP", "Laravel", "Symfony", "MySQL"],
   },
+
   {
-    slug: "html5",
-    themeColor: "#e34f26",
-    hero: {
-      tagline: "Modern Web Standards",
-      title: "HTML5 Development",
-      description: "Build responsive and interactive web pages with HTML5.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    },
+    slug: "saas-product-development",
+    title: "SaaS Product Development",
+    shortDesc: "Scalable cloud based SaaS platforms.",
+    description:
+      "We help startups and businesses build scalable Software-as-a-Service platforms with modern architecture, secure infrastructure, and subscription-based models.",
+
+    heroImage: Saas,
+
+    features: [
+      {
+        title: "Multi-Tenant Architecture",
+        desc: "Build platforms capable of serving multiple customers efficiently.",
+      },
+      {
+        title: "Subscription Billing",
+        desc: "Integrated payment systems for recurring subscription models.",
+      },
+      {
+        title: "Cloud Infrastructure",
+        desc: "Scalable cloud deployment using modern infrastructure.",
+      },
+      {
+        title: "Product Scaling",
+        desc: "Systems designed to support thousands of users.",
+      },
+    ],
+
+    process: [
+      "Product Strategy",
+      "MVP Development",
+      "Cloud Architecture",
+      "Scaling & Optimization",
+      "Product Launch",
+    ],
+
     benefits: [
-      { title: "Responsive", description: "Works on all devices." },
-      { title: "Accessible", description: "User-friendly." },
-      { title: "SEO Friendly", description: "Better search rankings." },
+      "Recurring revenue models",
+      "Cloud scalability",
+      "Global accessibility",
+      "Faster product growth",
     ],
-    offerings: [
-      "Responsive Websites",
-      "Web Apps",
-      "Multimedia Integration",
-      "Progressive Web Apps",
+
+    faqs: [
+      {
+        q: "What is SaaS product development?",
+        a: "SaaS development involves building cloud-based software that users access through subscriptions over the internet.",
+      },
+      {
+        q: "Can you help build an MVP for my SaaS startup?",
+        a: "Yes, we specialize in building Minimum Viable Products (MVPs) so startups can launch quickly and validate ideas.",
+      },
+      {
+        q: "Do you provide cloud deployment?",
+        a: "Yes, we deploy SaaS platforms on scalable cloud infrastructures like AWS, Azure, or Google Cloud.",
+      },
+      {
+        q: "Can SaaS platforms support thousands of users?",
+        a: "Yes, we build SaaS systems using scalable architecture capable of supporting large user bases.",
+      },
+      {
+        q: "Do you build subscription billing systems?",
+        a: "Yes, we integrate subscription and recurring billing systems using secure payment gateways.",
+      },
     ],
-    techStack: ["HTML5", "CSS3", "JavaScript", "Canvas"],
   },
+
   {
-    slug: "react",
-    themeColor: "#61dafb",
-    hero: {
-      tagline: "Interactive UIs",
-      title: "React Development",
-      description: "Develop fast, scalable user interfaces with React.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
-    benefits: [
-      { title: "Component-Based", description: "Reusable components." },
-      { title: "Performance", description: "Virtual DOM for speed." },
-      { title: "Ecosystem", description: "Rich library support." },
+    slug: "web-ecommerce-platforms",
+    title: "Web & E-Commerce Platforms",
+    shortDesc: "High performance websites and stores.",
+    description:
+      "We create modern websites and powerful e-commerce platforms that deliver excellent user experiences and maximize conversions.",
+
+    heroImage: Web,
+
+    features: [
+      {
+        title: "Custom Website Development",
+        desc: "Modern responsive websites tailored for your brand.",
+      },
+      {
+        title: "E-Commerce Store Development",
+        desc: "Complete online stores built for scalability and performance.",
+      },
+      {
+        title: "Payment Gateway Integration",
+        desc: "Secure payment processing integrations.",
+      },
+      {
+        title: "Performance Optimization",
+        desc: "Speed optimized websites for better user experience.",
+      },
     ],
-    offerings: [
-      "SPA Development",
-      "React Apps",
-      "UI Components",
-      "State Management",
-    ],
-    techStack: ["React", "Redux", "Next.js", "TypeScript"],
-  },
-  {
-    slug: "angular",
-    themeColor: "#dd0031",
-    hero: {
-      tagline: "Full-Featured Framework",
-      title: "Angular Development",
-      description: "Build complex web applications with Angular.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
-    },
-    benefits: [
-      { title: "MVC Architecture", description: "Structured development." },
-      { title: "Two-Way Binding", description: "Real-time updates." },
-      { title: "TypeScript", description: "Type safety." },
-    ],
-    offerings: [
-      "Angular Apps",
-      "Enterprise Solutions",
-      "Progressive Web Apps",
+
+    process: [
+      "Planning & Strategy",
+      "UI/UX Design",
+      "Development",
       "Testing",
+      "Website Launch",
     ],
-    techStack: ["Angular", "TypeScript", "RxJS", "NgRx"],
-  },
-  {
-    slug: "node",
-    themeColor: "#339933",
-    hero: {
-      tagline: "Server-Side JavaScript",
-      title: "Node.js Development",
-      description: "Create scalable server-side applications with Node.js.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    },
+
     benefits: [
-      { title: "Non-Blocking", description: "Asynchronous I/O." },
-      { title: "Scalable", description: "Handles high traffic." },
-      { title: "JavaScript", description: "Unified language." },
+      "Improved online presence",
+      "Higher conversion rates",
+      "Mobile-friendly experiences",
+      "Secure online transactions",
     ],
-    offerings: [
-      "API Development",
-      "Real-Time Apps",
-      "Microservices",
-      "Server Management",
+    faqs: [
+      {
+        q: "Do you develop custom websites?",
+        a: "Yes, we build modern, responsive websites tailored to your brand and business goals.",
+      },
+      {
+        q: "Which e-commerce platforms do you support?",
+        a: "We work with Shopify, Magento, WooCommerce, and also build fully custom e-commerce platforms.",
+      },
+      {
+        q: "Will my website be mobile friendly?",
+        a: "Absolutely. All our websites are fully responsive and optimized for mobile devices.",
+      },
+      {
+        q: "Can you integrate payment gateways?",
+        a: "Yes, we integrate secure payment gateways such as Stripe, Razorpay, PayPal, and others.",
+      },
+      {
+        q: "Do you provide website performance optimization?",
+        a: "Yes, we optimize websites for speed, SEO, and user experience.",
+      },
     ],
-    techStack: ["Node.js", "Express", "MongoDB", "Socket.io"],
   },
+
   {
-    slug: "wordpress",
-    themeColor: "#21759b",
-    hero: {
-      tagline: "Content Management",
-      title: "WordPress Development",
-      description: "Build websites and blogs with WordPress.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
-    },
-    benefits: [
-      { title: "User-Friendly", description: "Easy to manage." },
-      { title: "Customizable", description: "Themes and plugins." },
-      { title: "SEO Optimized", description: "Built-in SEO." },
+    slug: "mobile-applications",
+    title: "Mobile Applications",
+    shortDesc: "Android and iOS apps built for scale.",
+    description:
+      "We develop high-performance mobile applications for Android and iOS platforms that provide seamless user experiences and powerful functionality.",
+
+    heroImage: Mobile,
+
+    features: [
+      {
+        title: "Android App Development",
+        desc: "Custom Android applications built for performance.",
+      },
+      {
+        title: "iOS App Development",
+        desc: "High quality mobile apps for Apple devices.",
+      },
+      {
+        title: "Cross Platform Development",
+        desc: "Apps built using Flutter and React Native.",
+      },
+      {
+        title: "App Store Deployment",
+        desc: "Complete publishing to Google Play and App Store.",
+      },
     ],
-    offerings: [
-      "Custom Themes",
-      "Plugin Development",
-      "E-commerce Sites",
-      "Maintenance",
-    ],
-    techStack: ["WordPress", "PHP", "MySQL", "WooCommerce"],
-  },
-  {
-    slug: "magento",
-    themeColor: "#f26322",
-    hero: {
-      tagline: "E-commerce Powerhouse",
-      title: "Magento Development",
-      description: "Develop robust e-commerce platforms with Magento.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/magento/magento-original.svg",
-    },
-    benefits: [
-      { title: "Scalable", description: "Grows with business." },
-      { title: "Flexible", description: "Customizable features." },
-      { title: "Secure", description: "Payment integrations." },
-    ],
-    offerings: [
-      "E-commerce Sites",
-      "Custom Modules",
-      "Integration",
-      "Migration",
-    ],
-    techStack: ["Magento", "PHP", "MySQL", "Redis"],
-  },
-  {
-    slug: "shopify",
-    themeColor: "#96bf48",
-    hero: {
-      tagline: "Easy E-commerce",
-      title: "Shopify Development",
-      description: "Create online stores quickly with Shopify.",
-      image: "https://cdn.simpleicons.org/shopify",
-    },
-    benefits: [
-      { title: "Quick Setup", description: "Launch fast." },
-      { title: "Themes", description: "Beautiful designs." },
-      { title: "Apps", description: "Extend functionality." },
-    ],
-    offerings: [
-      "Store Setup",
-      "Custom Themes",
+
+    process: [
+      "App Idea Validation",
+      "UI/UX Design",
       "App Development",
-      "Integration",
+      "Testing & QA",
+      "App Launch",
     ],
-    techStack: ["Shopify", "Liquid", "JavaScript", "GraphQL"],
-  },
-  {
-    slug: "react-native",
-    themeColor: "#61dafb",
-    hero: {
-      tagline: "Cross-Platform Mobile",
-      title: "React Native Development",
-      description: "Build mobile apps for iOS and Android with React Native.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    },
+
     benefits: [
-      { title: "Cross-Platform", description: "One codebase." },
-      { title: "Native Performance", description: "Near-native speed." },
-      { title: "Reusable", description: "React components." },
+      "Reach mobile users",
+      "Increase customer engagement",
+      "Improve brand presence",
+      "Scalable mobile solutions",
     ],
-    offerings: [
-      "Mobile Apps",
-      "UI Development",
-      "API Integration",
+    faqs: [
+      {
+        q: "Do you develop apps for both Android and iOS?",
+        a: "Yes, we develop applications for Android, iOS, and also cross-platform apps using modern frameworks.",
+      },
+      {
+        q: "Can you publish my app on the App Store and Play Store?",
+        a: "Yes, we handle the entire app publishing process including store compliance and deployment.",
+      },
+      {
+        q: "Do you provide UI/UX design for mobile apps?",
+        a: "Yes, we design intuitive and engaging mobile user experiences before development.",
+      },
+      {
+        q: "How long does mobile app development take?",
+        a: "Typical development timelines range from 6 to 12 weeks depending on complexity.",
+      },
+      {
+        q: "Can existing systems connect with mobile apps?",
+        a: "Yes, we integrate mobile apps with APIs, databases, and existing business systems.",
+      },
+    ],
+  },
+
+  {
+    slug: "digital-marketing",
+    title: "Digital Marketing",
+    shortDesc: "Data-driven marketing for growth.",
+    description:
+      "Our digital marketing services help businesses increase online visibility, attract customers, and generate leads through targeted marketing strategies.",
+
+    heroImage: Digital,
+
+    features: [
+      {
+        title: "SEO Optimization",
+        desc: "Improve search rankings and website visibility.",
+      },
+      {
+        title: "Google Ads Campaigns",
+        desc: "Targeted paid advertising for faster growth.",
+      },
+      {
+        title: "Social Media Marketing",
+        desc: "Build your brand presence across social platforms.",
+      },
+      {
+        title: "Marketing Analytics",
+        desc: "Data-driven insights to optimize campaigns.",
+      },
+    ],
+
+    process: [
+      "Market Research",
+      "Strategy Planning",
+      "Campaign Launch",
+      "Performance Optimization",
+      "Reporting",
+    ],
+
+    benefits: [
+      "Increase website traffic",
+      "Generate quality leads",
+      "Improve brand visibility",
+      "Better marketing ROI",
+    ],
+    faqs: [
+      {
+        q: "What digital marketing services do you provide?",
+        a: "We provide SEO, Google Ads, social media marketing, analytics, and conversion optimization.",
+      },
+      {
+        q: "How long does SEO take to show results?",
+        a: "SEO typically shows measurable improvements within 3 to 6 months depending on competition.",
+      },
+      {
+        q: "Do you manage social media accounts?",
+        a: "Yes, we manage content creation, posting schedules, and campaign optimization.",
+      },
+      {
+        q: "Can digital marketing generate leads for my business?",
+        a: "Yes, our campaigns focus on attracting targeted audiences and converting them into leads.",
+      },
+      {
+        q: "Do you provide marketing reports?",
+        a: "Yes, we provide detailed analytics and performance reports regularly.",
+      },
+    ],
+  },
+
+  {
+    slug: "api-integrations",
+    title: "API Integrations",
+    shortDesc: "Connect systems into one ecosystem.",
+    description:
+      "We integrate APIs to connect different systems, applications, and services so businesses can automate processes and improve efficiency.",
+
+    heroImage: API,
+
+    features: [
+      {
+        title: "Payment Gateway Integration",
+        desc: "Secure payment API integrations.",
+      },
+      {
+        title: "CRM Integration",
+        desc: "Connect business systems with CRM platforms.",
+      },
+      {
+        title: "ERP Integration",
+        desc: "Integrate enterprise software systems.",
+      },
+      {
+        title: "Custom API Development",
+        desc: "Build APIs to connect internal applications.",
+      },
+    ],
+
+    process: [
+      "System Analysis",
+      "API Design",
+      "Integration Development",
+      "Testing",
       "Deployment",
     ],
-    techStack: ["React Native", "Expo", "Redux", "Firebase"],
-  },
-  {
-    slug: "ios",
-    themeColor: "#000000",
-    hero: {
-      tagline: "iOS Excellence",
-      title: "iOS Development",
-      description: "Develop native iOS applications.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg",
-    },
+
     benefits: [
-      { title: "Native", description: "Best performance." },
-      { title: "User Experience", description: "Apple standards." },
-      { title: "Security", description: "Secure apps." },
+      "Automated workflows",
+      "Improved data exchange",
+      "Better system connectivity",
+      "Higher operational efficiency",
     ],
-    offerings: ["iOS Apps", "Swift Development", "App Store", "Maintenance"],
-    techStack: ["Swift", "Xcode", "UIKit", "Core Data"],
-  },
-  {
-    slug: "android",
-    themeColor: "#3ddc84",
-    hero: {
-      tagline: "Android Innovation",
-      title: "Android Development",
-      description: "Build native Android applications.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg",
-    },
-    benefits: [
-      { title: "Market Share", description: "Wide reach." },
-      { title: "Customizable", description: "Flexible UI." },
-      { title: "Integration", description: "Google services." },
+    faqs: [
+      {
+        q: "What is API integration?",
+        a: "API integration allows different software systems to communicate and exchange data automatically.",
+      },
+      {
+        q: "Can you integrate payment gateways?",
+        a: "Yes, we integrate various payment APIs including Stripe, Razorpay, PayPal, and others.",
+      },
+      {
+        q: "Do you build custom APIs?",
+        a: "Yes, we design and develop custom APIs to connect internal systems and applications.",
+      },
+      {
+        q: "Can APIs automate business workflows?",
+        a: "Yes, APIs allow automation of processes such as data syncing, payments, reporting, and more.",
+      },
+      {
+        q: "Are API integrations secure?",
+        a: "Yes, we implement authentication, encryption, and best security practices to protect data.",
+      },
     ],
-    offerings: ["Android Apps", "Kotlin Development", "Play Store", "Updates"],
-    techStack: ["Kotlin", "Android Studio", "Jetpack", "Firebase"],
-  },
-  {
-    slug: "aws",
-    themeColor: "#ff9900",
-    hero: {
-      tagline: "Cloud Computing",
-      title: "AWS Development",
-      description: "Leverage Amazon Web Services for scalable solutions.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
-    },
-    benefits: [
-      { title: "Scalable", description: "Auto-scaling." },
-      { title: "Reliable", description: "High uptime." },
-      { title: "Secure", description: "Enterprise security." },
-    ],
-    offerings: ["Cloud Migration", "Serverless", "DevOps", "Monitoring"],
-    techStack: ["AWS", "EC2", "Lambda", "S3"],
-  },
-  {
-    slug: "azure",
-    themeColor: "#0078d4",
-    hero: {
-      tagline: "Microsoft Cloud",
-      title: "Azure Development",
-      description: "Build on Microsoft's cloud platform.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
-    },
-    benefits: [
-      { title: "Integration", description: "Microsoft ecosystem." },
-      { title: "AI/ML", description: "Built-in AI." },
-      { title: "Hybrid", description: "On-prem and cloud." },
-    ],
-    offerings: ["Cloud Apps", "AI Services", "DevOps", "Data Analytics"],
-    techStack: ["Azure", "Functions", "Cosmos DB", "Power BI"],
-  },
-  {
-    slug: "google-cloud",
-    themeColor: "#4285f4",
-    hero: {
-      tagline: "Google's Cloud",
-      title: "Google Cloud Development",
-      description: "Utilize Google's cloud infrastructure.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg",
-    },
-    benefits: [
-      { title: "AI/ML", description: "TensorFlow integration." },
-      { title: "Big Data", description: "Data processing." },
-      { title: "Global", description: "Worldwide network." },
-    ],
-    offerings: ["Cloud Apps", "ML Models", "Big Data", "Kubernetes"],
-    techStack: ["Google Cloud", "BigQuery", "Kubernetes", "TensorFlow"],
-  },
-  {
-    slug: "ai",
-    themeColor: "#ff6b35",
-    hero: {
-      tagline: "Intelligent Automation",
-      title: "AI Integration",
-      description: "Incorporate AI into your applications.",
-      image:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-    },
-    benefits: [
-      { title: "Automation", description: "Reduce manual work." },
-      { title: "Insights", description: "Data-driven decisions." },
-      { title: "Personalization", description: "Tailored experiences." },
-    ],
-    offerings: [
-      "Chatbots",
-      "Recommendation Systems",
-      "Image Recognition",
-      "Predictive Analytics",
-    ],
-    techStack: ["Python", "TensorFlow", "PyTorch", "OpenAI"],
-  },
-  {
-    slug: "blockchain",
-    themeColor: "#121d33",
-    hero: {
-      tagline: "Decentralized Solutions",
-      title: "Blockchain Development",
-      description: "Build secure, transparent applications with blockchain.",
-      image: "https://cdn.simpleicons.org/blockchaindotcom",
-    },
-    benefits: [
-      { title: "Security", description: "Immutable records." },
-      { title: "Transparency", description: "Open ledger." },
-      { title: "Decentralized", description: "No central control." },
-    ],
-    offerings: ["Smart Contracts", "DApps", "Cryptocurrency", "Integration"],
-    techStack: ["Ethereum", "Solidity", "Web3.js", "IPFS"],
   },
 ];
 
-export default services;
+export default servicesData;

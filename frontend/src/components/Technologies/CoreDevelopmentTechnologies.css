@@ -1,0 +1,145 @@
+.core-dev-section {
+  padding: 120px 20px;
+  background: #0d5b96;
+  font-family: "Poppins", sans-serif;
+}
+
+.core-dev-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.section-labell {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #0d5b96;
+  background: #ffffff;
+  padding: 6px 16px;
+  border-radius: 30px;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: 800;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+}
+
+.section-title p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.core-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 100px;
+}
+
+.core-card {
+  background: #c4dbf5;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.core-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(13, 91, 150, 0.15);
+}
+
+.top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: #d2e5f4;
+  border-radius: 10px 10px 0 0;
+}
+
+.core-card h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.core-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.core-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.core-card p {
+  color: #0d5b96;
+  font-size: 15px;
+}
+
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+
+.infra-card {
+  background: #c4dbf5;
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: 0.4s ease;
+}
+
+.infra-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(13, 91, 150, 0.15);
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-icon {
+  font-size: 28px;
+  color: #1e88e5;
+  margin-right: 12px;
+}
+
+@media (max-width: 992px) {
+  .core-grid,
+  .infra-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}

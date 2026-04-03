@@ -93,10 +93,10 @@
 .testimonial-card {
   background: #ffffff;
   border-radius: 18px;
-  padding: 25px 25px 70px; 
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  padding: 25px 25px 70px;
+  box-shadow: 0 1px 1px #0d5b96;
   width: 100%;
-  position: relative; /
+  position: relative;
   transition: 0.3s ease;
 }
 
@@ -205,7 +205,7 @@
 
   .testimonial-card {
     flex: 2;
-    padding: 45px 45px 80px; 
+    padding: 45px 45px 80px;
   }
 
   .nav-buttons {

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/companylogo.png";
+import logo from "../../assets/images/exoticlogo.png";
 import {
   Linkedin,
   X,
@@ -92,22 +92,23 @@ const Footer = () => {
           </div>
           <div className="footer-col contact-col">
             <h4>Contact</h4>
-            <div className="contact-item">
+            <div className="contact-itemm">
               <Mail size={16} />
               <span>Info@exoticinfotech.com</span>
             </div>
-            <div className="contact-item">
+            <div className="contact-itemm">
               <Mail size={16} />
               <span>riddhi.rana@exoticinfotech.com</span>
             </div>
-            <div className="contact-item">
+            <div className="contact-itemm">
               <Phone size={16} />
               <span>+91-8511624907</span>
             </div>
-            <div className="contact-item">
+            <div className="contact-itemm">
               <MapPin size={18} />
               <span>
-                B-315, Alpha Arcades, Near Mipco Chowkdi, GIDC, Bharuch, Gujarat
+                B-315, Alpha Arcades, 
+                <br></br>Near Mipco Chowkdi, GIDC,<br></br> Bharuch, Gujarat
                 392001
               </span>
             </div>

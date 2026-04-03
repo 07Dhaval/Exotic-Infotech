@@ -1,164 +1,88 @@
-/* ===== SECTION ===== */
-
 .tech-section {
-  padding: 120px 20px;
-  background: linear-gradient(to bottom, #f8fbff, #eef4fb);
-  font-family: "Poppins", sans-serif;
-}
-
-.tech-wrapper {
-  max-width: 1200px;
-  margin: auto;
-}
-
-/* ===== HEADER ===== */
-
-.tech-header {
-  text-align: center;
-  margin-bottom: 80px;
-}
-
-.section-label {
-  display: inline-block;
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 2px;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #0d5b96;
-  background: rgba(13, 91, 150, 0.1);
-  padding: 6px 16px;
-  border-radius: 30px;
-  margin-bottom: 20px;
 }
-
-.gradient-title {
-  font-size: 44px;
-  font-weight: 800;
-  background: linear-gradient(90deg, #0d5b96, #1e88e5);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* ===== LAYOUT ===== */
 
 .tech-container {
-  display: flex;
-  gap: 60px;
-  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 
-/* ===== LEFT CONTENT ===== */
-
-.tech-content {
-  flex: 1.2;
-}
-
-.tech-description {
-  font-size: 18px;
-  color: #444;
-  line-height: 1.9;
-  margin-bottom: 25px;
-}
-
-.tech-highlight {
-  font-size: 18px;
-  font-weight: 600;
-  color: #0d5b96;
-  line-height: 1.8;
-}
-
-/* ===== CARD ===== */
-
-.tech-card {
-  flex: 1;
-  background: #ffffff;
-  padding: 50px;
-  border-radius: 20px;
-  position: relative;
-  border: 1px solid rgba(13, 91, 150, 0.08);
-  box-shadow: 0 20px 50px rgba(13, 91, 150, 0.08);
-  transition: 0.4s ease;
-}
-
-.tech-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 30px 70px rgba(13, 91, 150, 0.15);
-}
-
-.card-top-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(90deg, #0d5b96, #1e88e5);
-  border-radius: 20px 20px 0 0;
-}
-
-.card-title {
-  font-size: 24px;
+.tech-header h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
   font-weight: 700;
-  margin-bottom: 40px;
-  color: #1f2937;
 }
 
-/* ===== GRID ===== */
-
-.card-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 25px 30px;
-}
-
-.card-item {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  font-weight: 500;
+.tech-intro p {
+  max-width: 850px;
+  margin: auto;
   font-size: 16px;
-  color: #374151;
-  transition: 0.3s ease;
+  line-height: 1.7;
+  opacity: 0.9;
+  margin-bottom: 12px;
 }
 
-.card-item:hover {
-  transform: translateX(6px);
+.philosophy-title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.philosophy-card {
+  background: #c4dbf5;
+  padding: 30px 20px;
+  border-radius: 14px;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+}
+
+.philosophy-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #0d5b96;
+}
+
+.philosophy-icon {
+  font-size: 28px;
+  color: #0d5b96;
+  margin-bottom: 15px;
+}
+
+.philosophy-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.philosophy-card p {
+  font-size: 14px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.tech-footer {
+  margin-top: 50px;
+  font-size: 28px;
+  font-weight: 700;
   color: #0d5b96;
 }
 
-/* ===== ICON STYLE ===== */
-
-.icon-wrapper {
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #1e88e5;
-}
-
-/* ===== RESPONSIVE ===== */
-
-@media (max-width: 992px) {
-  .tech-container {
-    flex-direction: column;
+@media (max-width: 768px) {
+  .tech-header h2 {
+    font-size: 30px;
   }
 
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gradient-title {
-    font-size: 34px;
-  }
-}
-
-@media (max-width: 600px) {
-  .tech-section {
-    padding: 80px 15px;
-  }
-
-  .tech-card {
-    padding: 35px;
+  .philosophy-title {
+    font-size: 22px;
   }
 }

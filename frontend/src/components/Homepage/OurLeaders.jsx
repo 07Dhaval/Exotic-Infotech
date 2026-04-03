@@ -6,17 +6,19 @@ import vijay from "../../assets/images/Vijayoffice.jpeg";
 import swapnil from "../../assets/images/swapniloffice.jpeg";
 import nikhil from "../../assets/images/nikhil.jpeg";
 import manmeet from "../../assets/images/manmeet.jpeg";
+import yash from "../../assets/images/Yash.webp";
+import riddhi from "../../assets/images/Riddhi.webp";
 
 const leadersMain = [
   {
     name: "Riddhi Rana",
     role: "Founder",
-    img: "https://exoticinfotech.com/Riddhi%20image.jpg",
+    img: riddhi,
   },
   {
     name: "Yash Shah",
     role: "Co-Founder",
-    img: "https://exoticinfotech.com/Yash%20Image.jpg",
+    img: yash,
   },
 ];
 

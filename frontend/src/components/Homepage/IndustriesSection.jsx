@@ -60,7 +60,7 @@ export default function IndustriesSection() {
         {industries.map((item, index) => (
           <div
             key={index}
-            className={`industry-card ${activeIndex === index ? "active" : ""}`}
+            className={`industry-cardd ${activeIndex === index ? "active" : ""}`}
             style={{ backgroundImage: `url(${item.image})` }}
             onMouseEnter={() => setActiveIndex(index)}
           >

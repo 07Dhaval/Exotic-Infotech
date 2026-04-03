@@ -1,56 +1,46 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import services from "../data/servicesData";
+import servicesData from "../data/servicesData";
+import { Link, useParams } from "react-router-dom";
+
+import ServiceHero from "../components/servicespage/ServiceHero";
+import ServiceFeatures from "../components/servicespage/ServiceFeatures";
+import ServiceFAQ from "../components/servicespage/ServiceFAQ";
 
 const Services = () => {
+  const { slug } = useParams();
+
+  const service = servicesData.find((s) => s.slug === slug);
+
+  if (slug) {
+    if (!service) {
+      return <h2 style={{ textAlign: "center" }}>Service not found</h2>;
+    }
+
+    return (
+      <>
+        <ServiceHero service={service} />
+
+        <ServiceFeatures features={service.features} />
+
+        <ServiceFAQ faqs={service.faqs} />
+      </>
+    );
+  }
+
   return (
-    <section style={{ padding: "120px 8%", background: "#f8f9fb" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "60px" }}>
-        Our Services
-      </h1>
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(350px, 1fr))",
-          gap: "40px",
-        }}
-      >
-        {services.map((service) => (
-          <div
-            key={service.slug}
-            style={{
-              background: "#fff",
-              padding: "30px",
-              borderRadius: "8px",
-              boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-              textAlign: "center",
-            }}
-          >
-            <img
-              src={service.hero.image}
-              alt={service.hero.title}
-              style={{ width: "80px", height: "80px", marginBottom: "20px" }}
-            />
-            <h3 style={{ marginBottom: "10px" }}>{service.hero.title}</h3>
-            <p style={{ marginBottom: "20px", color: "#666" }}>
-              {service.hero.description}
-            </p>
-            <Link
-              to={`/services/${service.slug}`}
-              style={{
-                background: service.themeColor,
-                color: "#fff",
-                padding: "10px 20px",
-                textDecoration: "none",
-                borderRadius: "5px",
-                display: "inline-block",
-              }}
-            >
-              Learn More
-            </Link>
-          </div>
-        ))}
-      </div>
+    <section className="services-grid">
+      {servicesData.map((service) => (
+        <Link
+          key={service.slug}
+          to={`/services/${service.slug}`}
+          className="service-card"
+        >
+          <img src={service.heroImage} alt={service.title} />
+
+          <h3>{service.title}</h3>
+
+          <p>{service.shortDesc}</p>
+        </Link>
+      ))}
     </section>
   );
 };

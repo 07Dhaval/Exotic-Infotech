@@ -54,6 +54,7 @@
   border-radius: 20px;
   transition: 0.3s ease;
   background: #f8fafc;
+  box-shadow: 0 5px 10px #0d5b96;
 }
 
 .homecard:hover {

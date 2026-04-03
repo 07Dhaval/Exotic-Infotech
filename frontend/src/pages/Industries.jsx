@@ -1,12 +1,12 @@
-import IndustriesSection from "../components/Homepage/IndustriesSection";
 import ContactSection from "../components/Letsconnect/ContactSection";
+import IndustriesList from "../components/Industries/IndustriesList";
 
 function Industries() {
   return (
-    <div style={{}}>
-      <IndustriesSection />
+    <>
+      <IndustriesList />
       <ContactSection />
-    </div>
+    </>
   );
 }
 

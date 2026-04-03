@@ -31,12 +31,6 @@ const services = [
     color: "soft-yellow",
   },
   {
-    icon: <FaCloud />,
-    title: "Cloud & DevOps Services",
-    desc: "Scalable cloud infrastructure and continuous integration/deployment pipelines.",
-    color: "soft-red",
-  },
-  {
     icon: <FaBuilding />,
     title: "Enterprise Solutions & Digital Transformation",
     desc: "Modernizing legacy systems and driving digital innovation at scale.",
@@ -47,6 +41,12 @@ const services = [
     title: "E-commerce & CMS Development",
     desc: "Powerful online stores and content management systems that drive sales.",
     color: "soft-yellow",
+  },
+  {
+    icon: <FaCloud />,
+    title: "Cloud & DevOps Services",
+    desc: "Scalable cloud infrastructure and CI/CD pipelines.",
+    color: "soft-red",
   },
   {
     icon: <FaBug />,
@@ -64,17 +64,17 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section className="servicess">
-      <div className="services-containerr">
-        <h2 className="services-titlee">What We Do</h2>
-        <p className="services-subtitlee">
-          We offer a full spectrum of software development services, including:
+    <section className="services-section">
+      <div className="services-container">
+        <h2 className="services-title">What We Do</h2>
+        <p className="services-subtitle">
+          We offer a full spectrum of software development services.
         </p>
 
-        <div className="services-gridd">
+        <div className="services-grid">
           {services.map((service, index) => (
-            <div key={index} className="service-cardd">
-              <div className={`service-iconn ${service.color}`}>
+            <div key={index} className="service-card">
+              <div className={`service-icon ${service.color}`}>
                 {service.icon}
               </div>
               <h3>{service.title}</h3>

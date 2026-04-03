@@ -1,7 +1,7 @@
 import React from "react";
 import "./WhyChoose.css";
 import { FaCheck } from "react-icons/fa";
-import image from "../../assets/exoticphotos/img3.jpeg";
+import image from "../../assets/exoticphotos/why1.gif";
 
 const points = [
   {
@@ -14,7 +14,7 @@ const points = [
   },
   {
     title: "Client-Centric Approach",
-    desc: "Dedicated account management and project governance.",
+    desc: "Dedicated account management and structured project governance.",
   },
   {
     title: "IP Protection & NDA",
@@ -30,7 +30,7 @@ export default function WhyChoose() {
 
         <div className="why-content">
           <div className="why-image">
-            <img src={image} alt="Developer Illustration" />
+            <img src={image} alt="Why Choose Exotic Infotech" />
           </div>
 
           <div className="why-points">
@@ -39,8 +39,8 @@ export default function WhyChoose() {
                 <div className="check-icon">
                   <FaCheck />
                 </div>
-                <div>
-                  <h4>{item.title}:</h4>
+                <div className="why-text">
+                  <h4>{item.title}</h4>
                   <p>{item.desc}</p>
                 </div>
               </div>

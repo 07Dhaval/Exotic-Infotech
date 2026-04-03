@@ -5,86 +5,87 @@
 }
 
 .approach-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1300px;
+  margin: auto;
 }
 
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: #f5d8bf;
-  color: #c15b1a;
-  padding: 8px 18px;
-  border-radius: 30px;
-  font-size: 14px;
-  font-weight: 600;
+.approach-title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
   margin-bottom: 20px;
+  color: #0d5b96;
 }
 
-.badge .star {
-  font-size: 14px;
-}
-
-.title {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  background: #0d5b96;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.description {
-  max-width: 800px;
+.approach-description {
+  max-width: 900px;
   margin: 0 auto 60px auto;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.7;
-  color: #4b5563;
+  color: #0d5b96;
 }
 
-.cards-grid {
+.approach-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
-.card {
-  background: #ffffff;
-  padding: 40px 30px;
-  border-radius: 20px;
+.approach-card {
+  background: #c4dbf5;
+  padding: 35px 25px;
+  border-radius: 18px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   text-align: left;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+.approach-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
 }
 
-.card h3 {
-  font-size: 18px;
+.approach-icon {
+  min-width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  background: #e0f2fe;
+  color: #0d5b96;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.approach-card h3 {
+  font-size: 17px;
   font-weight: 600;
-  color: #111827;
+  color: #0d5b96;
 }
 
-@media (max-width: 992px) {
-  .cards-grid {
+@media (max-width: 1024px) {
+  .approach-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 600px) {
-  .cards-grid {
+@media (max-width: 768px) {
+  .approach-section {
+    padding: 70px 15px;
+  }
+
+  .approach-grid {
     grid-template-columns: 1fr;
   }
 
-  .card {
+  .approach-card {
     flex-direction: column;
     text-align: center;
+  }
+
+  .approach-icon {
+    margin-bottom: 10px;
   }
 }

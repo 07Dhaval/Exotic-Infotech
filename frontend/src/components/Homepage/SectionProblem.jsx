@@ -3,11 +3,27 @@ import { FileText, Link2, Cpu } from "lucide-react";
 import "./SectionProblem.css";
 
 const SectionProblem = () => {
+  const renderMarquee = (direction) => (
+    <div className={`company-marquee ${direction}`}>
+      <div className="marquee-track">
+        {Array(14)
+          .fill("• Exotic Infotech •")
+          .map((text, index) => (
+            <span key={index} className="marquee-text">
+              {text}
+            </span>
+          ))}
+      </div>
+    </div>
+  );
+
   return (
     <section className="problem-section">
+      {renderMarquee("left")}
+
       <div className="problem-container">
         <h2 className="problem-heading">
-          Many Growing Businesses Are Stuck With Inefficient Systems
+          Is Your Business Stuck with Inefficient Systems?
         </h2>
 
         <div className="problem-points">
@@ -55,6 +71,8 @@ const SectionProblem = () => {
           </div>
         </div>
       </div>
+
+      {renderMarquee("right")}
     </section>
   );
 };

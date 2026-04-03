@@ -19,11 +19,10 @@ const HeaderSection = () => {
               alt="India Flag"
               className="flag"
             />
-            <span>India +91-8511624907</span>
+            <span>India +91-8511624907 | +91-7621833798</span>
           </div>
-
           <div className="separator"></div>
-
+          
           <div className="topbar-item">
             <FaEnvelope />
             <span>info@exoticinfotech.com</span>
