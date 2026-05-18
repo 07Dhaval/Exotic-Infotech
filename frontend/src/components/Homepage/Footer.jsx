@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/exoticlogo.png";
+import logodigi from "../../assets/images/exoticdigitech.png";
 import {
   Linkedin,
   Facebook,
@@ -18,13 +19,29 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-grid">
-          <div className="footer-brand">
+
+          {/* Brand Section */}
+          <div className="footer-brand footer-divider">
             <img src={logo} alt="Exotic Infotech" className="footer-logo" />
 
             <p>
               Exotic Infotech delivers innovative digital solutions, scalable
               software, and cutting-edge technologies that empower businesses to
               grow in the modern digital era.
+            </p>
+
+            <div className="footer-brand-line"></div>
+
+            <img
+              src={logodigi}
+              alt="Exotic Digitech"
+              className="footer-logodigi"
+            />
+
+            <p>
+              Exotic Digitech is the digital marketing arm of Exotic
+              Infotech.We help businesses grow online with tailored strategies
+              that deliver measurable results.
             </p>
 
             <div className="footer-social">
@@ -35,6 +52,7 @@ const Footer = () => {
               >
                 <Linkedin size={18} />
               </a>
+
               <a
                 href="https://x.com/ExoticInfo99367"
                 target="_blank"
@@ -45,6 +63,7 @@ const Footer = () => {
                   style={{ fontSize: "18px" }}
                 />
               </a>
+
               <a
                 href="https://www.instagram.com/exotic__infotech"
                 target="_blank"
@@ -52,6 +71,7 @@ const Footer = () => {
               >
                 <Instagram size={18} />
               </a>
+
               <a
                 href="https://www.facebook.com/share/1QWiANxMDX/"
                 target="_blank"
@@ -62,58 +82,72 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer-col">
+          {/* Company */}
+          <div className="footer-col footer-divider">
             <h4>Company</h4>
+
             <ul>
               <li>
                 <Link to="/company">About Us</Link>
               </li>
+
               {/* <li><Link to="/Leader">Our Team</Link></li> */}
+
               <li>
                 <Link to="/design">Design</Link>
               </li>
+
               <li>
                 <Link to="/careers">Careers</Link>
               </li>
+
               <li>
                 <Link to="/blog">Blog</Link>
               </li>
             </ul>
           </div>
 
-          <div className="footer-col">
+          {/* Services */}
+          <div className="footer-col footer-divider">
             <h4>Services</h4>
+
             <ul>
               <li>
                 <Link to="/services/custom-business-software">
                   Custom Business Software
                 </Link>
               </li>
+
               <li>
                 <Link to="/services/saas-product-development">
                   SaaS Product Development
                 </Link>
               </li>
+
               <li>
                 <Link to="/services/web-ecommerce-platforms">
                   Web & E-Commerce Platforms
                 </Link>
               </li>
+
               <li>
                 <Link to="/services/mobile-applications">
                   Mobile Applications
                 </Link>
               </li>
+
               <li>
-                <Link to="/services/digital-marketing">Digital Marketing</Link>
+                <Link to="/services/digital-marketing">
+                  Digital Marketing
+                </Link>
               </li>
             </ul>
           </div>
 
+          {/* Contact */}
           <div className="footer-col contact-col">
             <h4>Contact</h4>
 
-          
             <div className="contact-itemm">
               <Mail size={16} />
               <span>info@exoticinfotech.com</span>
@@ -123,7 +157,7 @@ const Footer = () => {
               <Mail size={16} />
               <span>contact@exoticinfotech.com</span>
             </div>
-            
+
             {/* <div className="contact-itemm">
               <Mail size={16} />
               <span>riddhi.rana@exoticinfotech.com</span>
@@ -136,17 +170,20 @@ const Footer = () => {
 
             <div className="contact-itemm">
               <MapPin size={18} />
+
               <span>
                 Bharuch,
                 <br />
                 B-315, Alpha Arcades,
-                Near Mipco Chowkdi, 
+                Near Mipco Chowkdi,
                 <br />
                 GIDC, Gujarat 392001
               </span>
             </div>
+
             <div className="contact-itemm">
               <MapPin size={18} />
+
               <span>
                 Vadodara,
                 <br />
@@ -158,6 +195,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
       </div>
     </footer>
   );
