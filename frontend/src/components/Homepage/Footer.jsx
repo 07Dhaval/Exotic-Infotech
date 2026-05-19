@@ -19,7 +19,6 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-grid">
-
           {/* Brand Section */}
           <div className="footer-brand footer-divider">
             <img src={logo} alt="Exotic Infotech" className="footer-logo" />
@@ -39,47 +38,10 @@ const Footer = () => {
             />
 
             <p>
-              Exotic Digitech is the digital marketing arm of Exotic
-              Infotech.We help businesses grow online with tailored strategies
-              that deliver measurable results.
+              Exotic Digitech is the digital marketing arm of Exotic Infotech.We
+              help businesses grow online with tailored strategies that deliver
+              measurable results.
             </p>
-
-            <div className="footer-social">
-              <a
-                href="https://www.linkedin.com/company/exotic-infotech/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Linkedin size={18} />
-              </a>
-
-              <a
-                href="https://x.com/ExoticInfo99367"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon
-                  icon={faXTwitter}
-                  style={{ fontSize: "18px" }}
-                />
-              </a>
-
-              <a
-                href="https://www.instagram.com/exotic__infotech"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Instagram size={18} />
-              </a>
-
-              <a
-                href="https://www.facebook.com/share/1QWiANxMDX/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Facebook size={18} />
-              </a>
-            </div>
           </div>
 
           {/* Company */}
@@ -137,9 +99,7 @@ const Footer = () => {
               </li>
 
               <li>
-                <Link to="/services/digital-marketing">
-                  Digital Marketing
-                </Link>
+                <Link to="/services/digital-marketing">Digital Marketing</Link>
               </li>
             </ul>
           </div>
@@ -174,8 +134,7 @@ const Footer = () => {
               <span>
                 Bharuch,
                 <br />
-                B-315, Alpha Arcades,
-                Near Mipco Chowkdi,
+                B-315, Alpha Arcades, Near Mipco Chowkdi,
                 <br />
                 GIDC, Gujarat 392001
               </span>
@@ -187,15 +146,49 @@ const Footer = () => {
               <span>
                 Vadodara,
                 <br />
-                329/330 SWC HUB,
-                Nr. Vasana Bhayili Road,
+                329/330 SWC HUB, Nr. Vasana Bhayili Road,
                 <br />
                 Gujarat 390019
               </span>
             </div>
+            <div className="footer-social">
+              <a
+                href="https://www.linkedin.com/company/exotic-infotech/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Linkedin size={18} />
+              </a>
+
+              <a
+                href="https://x.com/ExoticInfo99367"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faXTwitter}
+                  style={{ fontSize: "18px" }}
+                />
+              </a>
+
+              <a
+                href="https://www.instagram.com/exotic__infotech"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram size={18} />
+              </a>
+
+              <a
+                href="https://www.facebook.com/share/1QWiANxMDX/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook size={18} />
+              </a>
+            </div>
           </div>
         </div>
-
       </div>
     </footer>
   );

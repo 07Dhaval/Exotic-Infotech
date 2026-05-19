@@ -44,6 +44,36 @@
   gap: 15px;
 }
 
+.service-hero-buttons .btn-primary {
+  background: #0d5b96;
+  color: #ffffff;
+  border: 1px solid #0d5b96;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.service-hero-buttons .btn-primary:hover {
+  background: #0a4575;
+  border-color: #0a4575;
+}
+
+.service-hero-buttons .btn-primary:nth-child(2) {
+  background: transparent;
+  color: #0d5b96;
+  border: 2px solid #0d5b96;
+}
+
+.service-hero-buttons .btn-primary:nth-child(2):hover {
+  background: #0d5b96;
+  color: #ffffff;
+}
+
 .secondary-btn {
   background: #0d5b96;
   color: #ffffff;
@@ -447,9 +477,7 @@
   text-transform: uppercase;
 }
 
-
 @media (max-width: 1024px) {
-
   .service-hero-container {
     flex-direction: column;
     text-align: center;
@@ -481,11 +509,9 @@
     gap: 34px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
 }
 
 @media (max-width: 768px) {
-
   .service-hero {
     padding: 60px 0;
   }
@@ -586,11 +612,9 @@
     flex-direction: column;
     gap: 14px;
   }
-
 }
 
 @media (max-width: 480px) {
-
   .service-hero-text h1 {
     font-size: 26px;
   }
@@ -635,5 +659,4 @@
   .marketing-packages-note {
     font-size: 13px;
   }
-
 }

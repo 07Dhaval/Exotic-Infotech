@@ -2,7 +2,7 @@ import Custom from "../assets/Services/Custom2.gif";
 import Saas from "../assets/Services/Saas.gif";
 import Web from "../assets/Services/Web1.gif";
 import Mobile from "../assets/Services/Mobile.gif";
-import Digital from "../assets/Services/Digital.gif";
+import Digital from "../assets/Services/exoticdigitech2.png";
 import API from "../assets/Services/API.gif";
 const servicesData = [
   {
@@ -276,7 +276,7 @@ const servicesData = [
     title: "Digital Marketing",
     shortDesc: "Data-driven marketing for growth.",
     description:
-      "Our digital marketing services help businesses increase online visibility, attract customers, and generate leads through targeted marketing strategies.",
+      "In today's connected world, digital marketing is how brands get discovered, build trust, and grow revenue online. We combine <strong>SEO, paid ads, social media</strong> and <strong>conversion-focused funnels</strong> to turn clicks into customers — with data driving every decision.",
 
     heroImage: Digital,
 
@@ -313,12 +313,17 @@ const servicesData = [
       "Improve brand visibility",
       "Better marketing ROI",
     ],
+    buttons: [
+      {
+        text: "View Packages",
+        path: "#sym:marketingPackages",
+      },
+    ],
     marketingPackages: {
       eyebrow: "Our Plans",
       title: "Digital Marketing Packages",
       subtitle: "Smart Strategies. Powerful Results. Real Growth.",
-      note:
-        "Ad budget is separate | Custom services available on request | Pricing may vary based on requirements",
+      note: "Ad budget is separate | Custom services available on request | Pricing may vary based on requirements",
       packages: [
         {
           name: "Starter",
@@ -422,7 +427,8 @@ const servicesData = [
           label: "Package",
           icon: "diamond",
           theme: "purple",
-          bestFor: "Businesses that want serious scaling and consistent lead flow",
+          bestFor:
+            "Businesses that want serious scaling and consistent lead flow",
           features: [
             {
               icon: "filter",

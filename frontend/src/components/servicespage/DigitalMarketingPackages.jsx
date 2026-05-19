@@ -40,7 +40,7 @@ const DigitalMarketingPackages = ({ packagesData }) => {
   if (!packagesData?.packages?.length) return null;
 
   return (
-    <section className="marketing-packages">
+    <section className="marketing-packages" id="marketingPackages">
       <div className="marketing-packages-container">
         <div className="marketing-packages-header">
           <span>{packagesData.eyebrow}</span>
